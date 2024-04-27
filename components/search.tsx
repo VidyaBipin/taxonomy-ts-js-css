@@ -9,14 +9,26 @@ import { toast } from "@/components/ui/use-toast"
 interface DocsSearchProps extends React.HTMLAttributes<HTMLFormElement> {}
 
 export function DocsSearch({ className, ...props }: DocsSearchProps) {
+  const inputRef=React.useRef<HTMLInputElement>(null)
   function onSubmit(event: React.SyntheticEvent) {
     event.preventDefault()
-
     return toast({
       title: "Not implemented",
       description: "We're still working on the search.",
     })
   }
+  const keyDownHandler = (event: KeyboardEvent) => {
+    if (event.key === "k" && event.ctrlKey) {
+      event.preventDefault();
+      if (inputRef.current) {
+        inputRef.current.focus?.();
+      }
+    }
+  };
+  
+  React.useEffect(() => {
+    window.addEventListener("keydown", keyDownHandler);
+  });
 
   return (
     <form
@@ -28,6 +40,7 @@ export function DocsSearch({ className, ...props }: DocsSearchProps) {
         type="search"
         placeholder="Search documentation..."
         className="h-8 w-full sm:w-64 sm:pr-12"
+        ref={inputRef}
       />
       <kbd className="pointer-events-none absolute right-1.5 top-1.5 hidden h-5 select-none items-center gap-1 rounded border bg-background px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100 sm:flex">
         <span className="text-xs">⌘</span>K
