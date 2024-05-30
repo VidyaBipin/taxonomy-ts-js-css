@@ -1,6 +1,5 @@
 import { User } from "@prisma/client"
 import type { Icon } from "lucide-react"
-
 import { Icons } from "@/components/icons"
 
 export type NavItem = {
@@ -31,6 +30,7 @@ export type SiteConfig = {
   name: string
   description: string
   url: string
+  quoteURL: string
   ogImage: string
   links: {
     twitter: string
@@ -63,3 +63,15 @@ export type UserSubscriptionPlan = SubscriptionPlan &
     stripeCurrentPeriodEnd: number
     isPro: boolean
   }
+
+export type Service = {
+  name: string
+  description: string
+  icon: JSXElement
+  quoteURL: string
+}
+
+export type Social = {
+  url: string
+  icon: JSX.Element
+}

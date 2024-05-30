@@ -7,6 +7,10 @@ import { MainNav } from "@/components/main-nav"
 import { DocsSearch } from "@/components/search"
 import { DocsSidebarNav } from "@/components/sidebar-nav"
 import { SiteFooter } from "@/components/site-footer"
+import SocialsIconList from "@/components/socials-list"
+import { buttonVariants } from "@/components/ui/button"
+import { cn } from "@/lib/utils"
+import { ModeToggle } from "@/components/mode-toggle"
 
 interface DocsLayoutProps {
   children: React.ReactNode
@@ -25,20 +29,26 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
               <DocsSearch />
             </div>
             <nav className="flex space-x-4">
+              <ModeToggle />
               <Link
-                href={siteConfig.links.github}
+                href={siteConfig.quoteURL}
+                className={cn(
+                  buttonVariants({ variant: "secondary", size: "sm" }),
+                  "px-4"
+                )}
                 target="_blank"
-                rel="noreferrer"
+                rel="nofollow"
               >
-                <Icons.gitHub className="h-7 w-7" />
-                <span className="sr-only">GitHub</span>
+                Get A Quote
               </Link>
             </nav>
           </div>
         </div>
       </header>
       <div className="container flex-1">{children}</div>
-      <SiteFooter className="border-t" />
+      <SiteFooter className="border-t">
+        <SocialsIconList />
+      </SiteFooter>
     </div>
   )
 }
