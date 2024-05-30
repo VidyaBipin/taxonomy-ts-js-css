@@ -30,9 +30,6 @@ export default function ReviewsSection() {
       className="container rounded-xl px-4 py-8 md:py-12 lg:py-24"
     >
       <div className="mx-auto flex flex-col items-center justify-center gap-4 text-center lg:w-[80%] ">
-        <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-          Reviews
-        </h2>
         <div className=" w-full rounded-xl p-4 leading-normal text-white sm:text-lg sm:leading-7">
           <Script
             src="https://static.elfsight.com/platform/platform.js"
