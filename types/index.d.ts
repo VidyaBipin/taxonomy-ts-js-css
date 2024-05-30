@@ -58,10 +58,6 @@ export type SiteConfig = {
     zip: string
   }
   hours: Hours
-  links: {
-    twitter: string
-    github: string
-  }
 }
 
 export type DocsConfig = {

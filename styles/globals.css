@@ -78,4 +78,11 @@
     @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+  .elfsight-app-d1d396e8-0e54-4136-9fba-d76234cf2b80 * {
+    @apply text-primary !important;
+  }
+
+  .elfsight-app-d1d396e8-0e54-4136-9fba-d76234cf2b80 > div {
+    @apply rounded-lg bg-secondary p-4;
+  }
 }

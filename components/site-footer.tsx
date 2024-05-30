@@ -44,6 +44,8 @@ export function SiteFooter({
               <Link
                 href={siteConfig.address.googleMapsURL}
                 className="flex flex-col items-center lg:items-start"
+                target="_blank"
+                rel="nofollow"
               >
                 {Object.keys(siteConfig.address)
                   .filter((field) => field !== "googleMapsURL")
@@ -61,8 +63,8 @@ export function SiteFooter({
         <div className="mt-4 flex w-full items-center justify-between self-start text-sm leading-loose text-primary/60">
           <p>© 2019 Kamil Agency</p>
           <div className="space-x-4">
-            <Link href="/privacy-policy">Privacy Policy</Link>
-            <Link href="/tos">ToS</Link>
+            <Link href="/">Privacy Policy</Link>
+            <Link href="/">ToS</Link>
           </div>
         </div>
       </div>

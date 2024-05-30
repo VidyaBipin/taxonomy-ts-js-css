@@ -3,19 +3,19 @@ import { Social } from "@/types"
 
 export const socials: { [index: string]: Social } = {
   Linkedin: {
-    url: "",
+    url: "/",
     icon: Icons.linkedin(),
   },
   Facebook: {
-    url: "",
+    url: "/",
     icon: Icons.facebook(),
   },
   Twitter: {
-    url: "",
+    url: "/",
     icon: Icons.twitter(),
   },
   Instagram: {
-    url: "",
+    url: "/",
     icon: Icons.instagram(),
   },
 }

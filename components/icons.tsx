@@ -35,7 +35,21 @@ import {
 export type Icon = LucideIcon
 
 export const Icons = {
-  logo: Command,
+  logo: () => (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      className="size-6"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path d="M4 20 L4 4 L12 12 L4 20" />
+      <path d="M12 12 L20 4 L20 20" />
+    </svg>
+  ),
   close: X,
   spinner: Loader2,
   chevronLeft: ChevronLeft,
