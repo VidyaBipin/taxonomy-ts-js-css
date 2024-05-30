@@ -6,7 +6,6 @@ import { buttonVariants } from "@/components/ui/button"
 import { MainNav } from "@/components/main-nav"
 import { SiteFooter } from "@/components/site-footer"
 import { ModeToggle } from "@/components/mode-toggle"
-import SocialsIconList from "@/components/socials-list"
 import { siteConfig } from "@/config/site"
 
 interface MarketingLayoutProps {

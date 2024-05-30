@@ -5,7 +5,7 @@ import "@/styles/globals.css"
 import { siteConfig } from "@/config/site"
 import { absoluteUrl, cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/toaster"
-import { Analytics } from "@/components/analytics"
+import { Analytics, SpeedInsight } from "@/components/analytics"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
 
@@ -30,20 +30,14 @@ export const metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: [
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "Server Components",
-    "Radix UI",
-  ],
+  keywords: ["Insurance", "Agency", "Home", "Auto", "Commercial"],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "KamilAgency",
+      url: siteConfig.url,
     },
   ],
-  creator: "shadcn",
+  creator: "KamilAgency",
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "white" },
     { media: "(prefers-color-scheme: dark)", color: "black" },
@@ -85,6 +79,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <Analytics />
+          <SpeedInsight />
           <Toaster />
           <TailwindIndicator />
         </ThemeProvider>
