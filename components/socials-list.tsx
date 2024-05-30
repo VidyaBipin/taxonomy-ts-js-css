@@ -1,14 +1,13 @@
 import { socials } from "@/config/socials"
 import { Social } from "@/types"
 import Link from "next/link"
-import { Icons } from "./icons"
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "./ui/button"
 
 function SocialIcon(props: Social) {
   return (
     <Link
-      className={cn(buttonVariants({ size: "icon" }), "bg-white")}
+      className={cn(buttonVariants({ size: "icon" }), "bg-primary/50")}
       href={props.url}
     >
       {props.icon}
@@ -18,10 +17,17 @@ function SocialIcon(props: Social) {
 
 export default function SocialsIconList() {
   return (
-    <div className="m-2 flex space-x-2  p-2">
-      {Object.keys(socials).map((social) => (
-        <SocialIcon {...socials[social]} />
-      ))}
+    <div className="flex justify-center self-start overflow-hidden">
+      <div className="flex w-full flex-col items-center justify-center">
+        <h3 className="mb-[5%] font-heading text-lg leading-[1.1] sm:text-lg md:text-xl">
+          Socials
+        </h3>
+        <div className="flex space-x-2">
+          {Object.keys(socials).map((social, ind) => (
+            <SocialIcon {...socials[social]} />
+          ))}
+        </div>
+      </div>
     </div>
   )
 }

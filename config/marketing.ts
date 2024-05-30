@@ -14,12 +14,12 @@ export const marketingConfig: MarketingConfig = {
       title: "Contact us",
       href: "/#contact-us",
     },
+    // {
+    //   title: "Blog",
+    //   href: "/blog",
+    // },
     {
-      title: "Blog",
-      href: "/blog",
-    },
-    {
-      title: "Learn More",
+      title: "Library",
       href: "/docs",
     },
   ],

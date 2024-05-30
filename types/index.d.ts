@@ -26,12 +26,38 @@ export type SidebarNavItem = {
     }
 )
 
+export type DailyHours = {
+  start: string
+  stop: string
+} | null
+
+export type Day =
+  | "Sunday"
+  | "Monday"
+  | "Tuesday"
+  | "Wednesday"
+  | "Thursday"
+  | "Friday"
+  | "Saturday"
+
+export type Hours = { [index: Day]: DailyHours }
+
 export type SiteConfig = {
   name: string
   description: string
   url: string
   quoteURL: string
   ogImage: string
+  contactEmail: string
+  contactNumber: string
+  address: {
+    googleMapsURL: string
+    street: string
+    city: string
+    state: string
+    zip: string
+  }
+  hours: Hours
   links: {
     twitter: string
     github: string

@@ -26,6 +26,9 @@ import {
   Instagram,
   User,
   X,
+  Mail,
+  Phone,
+  MapPin,
   type Icon as LucideIcon,
 } from "lucide-react"
 
@@ -53,11 +56,14 @@ export const Icons = {
   sun: SunMedium,
   moon: Moon,
   laptop: Laptop,
-  twitter: () => <Twitter />,
-  linkedin: () => <Linkedin />,
-  facebook: () => <Facebook />,
-  instagram: () => <Instagram />,
+  email: Mail,
+  phone: Phone,
+  twitter: () => <Twitter className="size-4" />,
+  linkedin: () => <Linkedin className="size-4" />,
+  facebook: () => <Facebook className="size-4" />,
+  instagram: () => <Instagram className="size-4" />,
   check: Check,
+  map: MapPin,
   gitHub: ({ ...props }: LucideProps) => (
     <svg
       aria-hidden="true"

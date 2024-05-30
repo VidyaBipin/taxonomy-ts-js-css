@@ -46,9 +46,7 @@ export default function DocsLayout({ children }: DocsLayoutProps) {
         </div>
       </header>
       <div className="container flex-1">{children}</div>
-      <SiteFooter className="border-t">
-        <SocialsIconList />
-      </SiteFooter>
+      <SiteFooter className="border-t" />
     </div>
   )
 }

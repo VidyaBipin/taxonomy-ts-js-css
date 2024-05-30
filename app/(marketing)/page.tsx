@@ -13,7 +13,6 @@ export default async function IndexPage() {
       <AboutSection />
       <ReviewsSection />
       <LocationSection />
-      <ContactSection />
     </>
   )
 }
