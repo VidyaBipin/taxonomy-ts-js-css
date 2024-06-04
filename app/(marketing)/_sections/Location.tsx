@@ -3,8 +3,8 @@ import { Day } from "@/types"
 
 export default function LocationSection() {
   return (
-    <section className="container rounded-xl p-8 md:py-12 lg:py-24">
-      <div className="mx-auto flex w-full flex-col items-center justify-center gap-4 text-center lg:w-4/5 ">
+    <section className="flex min-h-[85svh] items-center space-y-6 p-4 lg:min-h-screen">
+      <div className="mx-auto flex w-full flex-col items-center justify-center gap-4 text-center lg:w-2/3 ">
         <h2 className="mb-8 font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           Locations & Hours
         </h2>

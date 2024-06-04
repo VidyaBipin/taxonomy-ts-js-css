@@ -2,7 +2,10 @@ import Image from "next/image"
 
 export default function AboutSection() {
   return (
-    <section id="about-us" className="container py-8 md:py-12 lg:py-24 ">
+    <section
+      id="about-us"
+      className="flex min-h-[85svh] items-center overflow-hidden lg:min-h-screen "
+    >
       <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
         <h2 className="mb-4 font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           About Me

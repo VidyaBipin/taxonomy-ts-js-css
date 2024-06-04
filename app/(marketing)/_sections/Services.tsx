@@ -8,9 +8,9 @@ export default function ServiceSection() {
   return (
     <section
       id="services"
-      className="container space-y-6 bg-secondary py-8 dark:bg-transparent md:py-12 lg:py-24"
+      className="mt-10 flex min-h-[85svh] flex-col items-center justify-center bg-secondary px-8 py-16 dark:bg-transparent lg:min-h-screen"
     >
-      <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+      <div className="mx-auto mb-4 flex max-w-[58rem] flex-col items-center space-y-4 text-center ">
         <h2 className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
           Services
         </h2>
@@ -20,6 +20,7 @@ export default function ServiceSection() {
           coverage and exceptional service.
         </p>
       </div>
+
       <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
         {services.map((service, ind) =>
           ind < 5 ? (

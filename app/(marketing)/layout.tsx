@@ -16,9 +16,9 @@ export default async function MarketingLayout({
   children,
 }: MarketingLayoutProps) {
   return (
-    <div className="flex min-h-screen flex-col justify-center ">
-      <header className="container sticky top-0 z-40 bg-background lg:self-center ">
-        <div className="flex  items-center justify-between py-6">
+    <div className="flex flex-col justify-center">
+      <header className="sticky top-0 z-10 w-full bg-background lg:self-center">
+        <div className="flex items-center justify-between px-4 py-6 lg:justify-evenly">
           <MainNav items={marketingConfig.mainNav} />
           <nav className="flex items-center space-x-2">
             <ModeToggle />
@@ -36,7 +36,7 @@ export default async function MarketingLayout({
           </nav>
         </div>
       </header>
-      <main className="flex-1">{children}</main>
+      <main className="z-0 flex-1">{children}</main>
       <section id="contact-us">
         <SiteFooter className="border-t" />
       </section>

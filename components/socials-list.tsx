@@ -26,7 +26,7 @@ export default function SocialsIconList() {
         </h3>
         <div className="flex space-x-2">
           {Object.keys(socials).map((social, ind) => (
-            <SocialIcon {...socials[social]} />
+            <SocialIcon {...socials[social]} key={socials[social].url} />
           ))}
         </div>
       </div>

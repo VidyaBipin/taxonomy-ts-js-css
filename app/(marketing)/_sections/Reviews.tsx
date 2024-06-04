@@ -27,10 +27,10 @@ export default function ReviewsSection() {
   return (
     <section
       id="reviews"
-      className="container rounded-xl px-4 py-8 md:py-12 lg:py-24"
+      className="mb-10 flex min-h-[85svh] items-center overflow-hidden px-4 py-8 lg:min-h-screen"
     >
-      <div className="mx-auto flex flex-col items-center justify-center gap-4 text-center lg:w-[80%] ">
-        <div className=" w-full rounded-xl p-4 leading-normal text-white sm:text-lg sm:leading-7">
+      <div className="mx-auto flex flex-col items-center justify-center gap-4 text-center lg:w-2/3 ">
+        <div className=" w-full rounded-xl leading-normal text-white sm:text-lg sm:leading-7">
           <Script
             src="https://static.elfsight.com/platform/platform.js"
             data-use-service-core

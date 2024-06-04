@@ -8,6 +8,7 @@ import { Toaster } from "@/components/ui/toaster"
 import { Analytics, SpeedInsight } from "@/components/analytics"
 import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { ThemeProvider } from "@/components/theme-provider"
+import { GoogleTagManager } from "@next/third-parties/google"
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -68,7 +69,6 @@ export const metadata = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -84,6 +84,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <TailwindIndicator />
         </ThemeProvider>
       </body>
+      <GoogleTagManager gtmId="G-FF4L3T2C99" />
     </html>
   )
 }
