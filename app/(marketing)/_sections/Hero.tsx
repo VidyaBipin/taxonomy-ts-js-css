@@ -9,8 +9,8 @@ export default function HeroSection() {
     "Washington D.C",
     "Maryland",
     "Virginia",
-    "Delaware",
     "Pennsylvania",
+    "Delaware",
     "Ohio",
     "Indiana",
     "West Virginia",
@@ -18,7 +18,7 @@ export default function HeroSection() {
   ]
 
   return (
-    <section className="space-y-6 pb-8 pt-6 md:pb-12 md:pt-10 lg:py-32">
+    <section className="flex min-h-[85svh] items-center space-y-6 lg:min-h-[95vh]">
       <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center">
         <div className=" relative text-nowrap font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl">
           Your Insurance Experts In

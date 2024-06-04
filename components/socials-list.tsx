@@ -9,6 +9,8 @@ function SocialIcon(props: Social) {
     <Link
       className={cn(buttonVariants({ size: "icon" }), "bg-primary/50")}
       href={props.url}
+      target="_blank"
+      rel="nofollow"
     >
       {props.icon}
     </Link>

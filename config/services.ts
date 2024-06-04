@@ -35,19 +35,20 @@ export const services: Service[] = [
   },
   {
     name: "General Liability",
-    description: "Protect your rental properties with ease.",
-    icon: Icons.landlord({}),
+    description:
+      "Protect your business from injury and property damage claims.",
+    icon: Icons.liability({}),
     quoteURL: siteConfig.quoteURL,
   },
   {
     name: "Umbrella",
-    description: "Protect your rental properties with ease.",
-    icon: Icons.landlord({}),
+    description: "Extra liability protection for major claims and lawsuits.",
+    icon: Icons.umbrella({}),
     quoteURL: siteConfig.quoteURL,
   },
   {
     name: "Life",
-    description: "Protect your rental properties with ease.",
+    description: "Financial security and peace of mind for your loved ones.",
     icon: Icons.life({}),
     quoteURL: siteConfig.quoteURL,
   },

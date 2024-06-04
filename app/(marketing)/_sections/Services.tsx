@@ -22,7 +22,11 @@ export default function ServiceSection() {
       </div>
       <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3">
         {services.map((service, ind) =>
-          ind < 5 ? <ServiceCard service={service} /> : <></>
+          ind < 5 ? (
+            <ServiceCard service={service} key={service.name + ind} />
+          ) : (
+            <></>
+          )
         )}
 
         <div className="relative overflow-hidden rounded-lg border bg-background p-2">

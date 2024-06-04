@@ -13,8 +13,8 @@ export function DocsSearch({ className, ...props }: DocsSearchProps) {
     event.preventDefault()
 
     return toast({
-      title: "Not implemented",
-      description: "We're still working on the search.",
+      title: "Coming Soon!",
+      description: "We're working on documenting any information you may need!",
     })
   }
 

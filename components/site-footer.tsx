@@ -24,14 +24,20 @@ export function SiteFooter({
             </h3>
             <div className="flex lg:h-4/5 lg:justify-center">
               <div className="flex flex-col items-center justify-center lg:items-start">
-                <div className="flex items-center space-x-2 text-center text-sm text-primary/50 *:leading-loose md:text-left">
+                <a
+                  href={`mailTo:${siteConfig.contactEmail}`}
+                  className="flex items-center space-x-2 text-center text-sm text-primary/50 *:leading-loose md:text-left"
+                >
                   <Icons.email />
                   <p>{siteConfig.contactEmail}</p>
-                </div>
-                <div className="flex items-center space-x-2 text-center text-sm leading-loose text-primary/50 md:text-left">
+                </a>
+                <a
+                  href={`tel:${siteConfig.contactNumber}`}
+                  className="flex items-center space-x-2 text-center text-sm leading-loose text-primary/50 md:text-left"
+                >
                   <Icons.phone />
                   <p>{siteConfig.contactNumber}</p>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -63,8 +69,8 @@ export function SiteFooter({
         <div className="mt-4 flex w-full items-center justify-between self-start text-sm leading-loose text-primary/60">
           <p>© 2019 Kamil Agency</p>
           <div className="space-x-4">
-            <Link href="/">Privacy Policy</Link>
-            <Link href="/">ToS</Link>
+            <Link href="/policy/privacy">Privacy Policy</Link>
+            <Link href="/policy/terms">ToS</Link>
           </div>
         </div>
       </div>

@@ -21,11 +21,11 @@ export const siteConfig: SiteConfig = {
   },
   hours: {
     Sunday: null,
-    Monday: { start: "09:00 AM", end: "06:00 PM" },
-    Tuesday: { start: "09:00 AM", end: "06:00 PM" },
-    Wednesday: { start: "09:00 AM", end: "06:00 PM" },
-    Thursday: { start: "09:00 AM", end: "06:00 PM" },
-    Friday: { start: "09:00 AM", end: "06:00 PM" },
-    Saturday: { start: "10:00 AM", end: "02:00 PM" },
+    Monday: { start: "08:30 AM", end: "05:30 PM" },
+    Tuesday: { start: "08:30 AM", end: "05:30 PM" },
+    Wednesday: { start: "08:30 AM", end: "05:30 PM" },
+    Thursday: { start: "08:30 AM", end: "05:30 PM" },
+    Friday: { start: "08:30 AM", end: "05:30 PM" },
+    Saturday: null,
   },
 }
